@@ -24,7 +24,6 @@ const styles = {
 };
 
 const Input = (prop) => {
-  console.log('prop', prop);
   const { label, value, onChange, placeholder, secureTextEntry } = prop;
   const { inputStyle, labelStyle, containerStyle } = styles;
 
