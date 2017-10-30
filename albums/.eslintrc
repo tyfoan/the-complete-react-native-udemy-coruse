@@ -1,0 +1,78 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./internals/webpack/webpack.prod.babel.js"
+      }
+    }
+  },
+  "plugins": [
+    "react",
+//    "react-native",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "valid-jsdoc": 0,
+    "comma-dangle": [2, "never"],
+    "jsx-quotes": [2, "prefer-single"],
+    "max-len": [2, 120],
+    "radix": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+    // Disable until Flow supports let and const
+    "no-var": 0,
+    "vars-on-top": 0,
+
+    // Temporarily disabled for test/* until babel/babel-eslint#33 is resolved
+    "padded-blocks": 0,
+    "react/jsx-no-bind": 0,
+
+    "strict": 0,
+    "no-unused-vars": 1,
+    "one-var": ["error", { "uninitialized": "always" }],
+    "one-var-declaration-per-line": ["error", "initializations"],
+    "no-mixed-operators": 0,
+    "no-plusplus": 0,
+    "import/prefer-default-export": 0,
+    "react/forbid-prop-types": 0,
+    "no-bitwise": 0,
+    "object-property-newline": 0,
+    "react/no-unused-prop-types": 0,
+    "class-methods-use-this": 1,
+    "import/no-named-as-default": 0,
+    "import/no-extraneous-dependencies": 0,
+
+    "arrow-body-style": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-boolean-value": [2, "always"],
+    "react/prop-types": 0,
+    "react/jsx-space-before-closing": 0,
+    "react/self-closing-comp": 0,
+    "react/sort-comp": 0,
+    "react/wrap-multilines": 0,
+    "self-closing-comp": 0,
+    "spaced-comment": 0,
+    "linebreak-style": 0,
+    //"import/no-named-as-default": 0,
+    "import/no-dynamic-require": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/label-has-for": 0,
+    "func-names": 0,
+    "no-return-assign": 0
+  }
+}
