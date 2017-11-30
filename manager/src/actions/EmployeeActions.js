@@ -5,4 +5,4 @@ export const employeeUpdate = ({ prop, value }) => {
     type: EMPLOYEE_UPDATE,
     payload: { prop, value }
   };
-}
+};
