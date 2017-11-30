@@ -1,6 +1,6 @@
 import {
   EMPLOYEE_UPDATE
-} from "../actions/types";
+} from '../actions/types';
 
 const INITIAL_STATE = {
   name: {},
@@ -8,7 +8,7 @@ const INITIAL_STATE = {
   shift: {}
 };
 
-export default (state = INITIAL_STATE}, action) => {
+export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case EMPLOYEE_UPDATE:
       return { ...state, [action.payload.prop]: action.payload.name };
